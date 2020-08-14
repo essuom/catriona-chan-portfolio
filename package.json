@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.2",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/essuom/catriona-chan-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/essuom/catriona-chan-portfolio/issues"
+  },
+  "homepage": "https://github.com/essuom/catriona-chan-portfolio#readme",
+  "description": ""
+}

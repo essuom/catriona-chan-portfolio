@@ -1,0 +1,349 @@
+*{
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	color:$grey;
+	// border:1px solid pink;
+	font-family: $font2;
+	letter-spacing: 0.1em;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family:$font1;
+}
+a{
+	display:block;
+}
+p{
+	color:$color1;
+}
+
+body{
+	width:100vw;
+}
+
+section{
+	width:100vw;
+	min-height:100vh;
+	// box-sizing:border-box;
+}
+
+.links{
+	color:$color1;
+		&:hover{
+			color:$color1;
+			letter-spacing: 0.5em;
+		}
+}
+.home-button{
+	color:$grey;
+	&:hover{
+	text-decoration-line: none;
+	color:$color2;
+	}
+}
+
+
+.gif{
+	margin:0 -0.3em -0.5em auto;
+}
+
+nav {
+	right:7%;
+	bottom:5%;
+	position:fixed;
+	text-transform: uppercase;
+	text-align: right;
+
+		h3{
+			font-weight:700;
+			font-size:1.5em;
+			margin:0;
+		}
+		ul a{
+			font-size:1em;
+		}
+		i{	
+			text-indent: 0.5em;
+			font-size:1em;
+			letter-spacing: 0.5em;
+		}
+		li a{
+			font-size:0.8em;
+		}
+}
+
+.project-title{
+	font-weight:700;
+}
+.hero-image , .cv-hero-image{
+
+	// background-image: url("https://images.pexels.com/photos/1166643/pexels-photo-1166643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    .content{
+    	opacity:0;
+    }
+
+}
+
+.backingboard{
+	margin-left:5%;
+	width:80vw;
+	min-height:100vh;
+}
+
+.title{
+	padding-top:12%;
+	margin-left:20%;
+	h1{	
+		font-weight:700;
+		text-transform: uppercase;
+	}
+}
+.content{
+	min-height:80vh;
+	width:70%;
+	margin-top:10%;
+	margin-left:10%;
+	.mobile{
+		font-size:1.5em;
+		font-family: $font1;
+	}
+}
+.section-image{
+	width:25vh;
+	height:30vh;
+	margin-bottom:10%;
+  	object-fit: cover;
+  	background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+}
+
+.social-media{
+	a{	
+		font-size:2em;
+		padding:0;
+		text-decoration:none; 
+
+		i {
+			display:block;
+			text-align:center;
+			text-decoration:none;
+			&:hover{
+				color:$color2;
+			}
+
+		}
+	}
+}
+
+.work ul{
+	margin-bottom:10%;
+	li{
+		margin-bottom:5%;
+	}
+	.project-title{
+		font-weight:700;
+	}
+}
+
+.form-control{
+	box-sizing: border-box;
+}
+form input, form textarea{
+	font-family:$font2 !important;
+}
+
+form input:focus, form textarea:focus{
+	border-color:$color1 !important;
+	
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+button{
+	background-color:$grey !important;
+	border-color:transparent !important;
+	&:hover{
+		background-color:$color1 !important;
+		border-color:transparent !important;	
+	}
+	&:focus{
+		border-color:transparent !important;
+		-webkit-box-shadow: none !important;
+		-moz-box-shadow: none !important;
+		box-shadow: none !important;
+	}
+}
+
+
+//MY CV
+
+.skills{
+	font-size:1.2em;
+	font-family: $font2;
+	color:$color1;
+}
+
+.mobile{
+	text-align: center;
+	color:$grey;
+	font-weight:700;
+}
+
+
+.cv-chunk{
+	// font-family: $font2 !important;
+	// font-size:1.2em !important;
+		h3{
+			font-weight:700;
+			font-size:3em !important;
+			color:$color2;
+		}
+		ul{
+
+		font-family: $font2 !important;
+	}
+}
+.cv-sections{
+	.cv-section-title{
+		font-weight:700;
+	}
+	li{
+		color:$color1;
+		font-family: $font2 !important;
+	}
+}
+
+//CV ACCORDION
+
+#accordions .open{
+	height:100%;
+	opacity:1;
+}
+
+#accordions .close{
+	height:0%;
+	display:none;
+	opacity:0;
+}
+
+#accordions i{
+	font-size:0.8em;
+	color:$color2;
+}
+
+
+/*for small tablet - inclusive*/
+
+@media only screen and (min-width : 40em) {
+
+	nav {
+		right:5%;
+		bottom:3%;
+			h3{
+				font-size:2em;
+				margin:0;
+			}
+			ul a{
+				font-size:1.5em;
+			}
+			i{	
+				font-size:1.5em;
+				letter-spacing: 0.8em;
+			}
+	}
+	.gif{
+		margin:0 0.5em -1em auto;
+	}
+
+	.title{
+		padding-top:15%;
+		margin-left:10%;
+		h1{
+			font-size:400%;
+		}
+	}
+	
+	.content{
+		margin-top:5%;
+		margin-left:5%;
+		width:90%;
+		.mobile{
+			font-size:1.8em;
+		}
+		p{
+			font-size:1.5em;
+		}
+	}
+
+
+	.work ul{
+		display:block;
+		.project-title{
+			font-size:2em;
+		}
+		li{
+			margin-top:5%;
+			margin-bottom:5%;
+			a{
+				font-size:1.2em;
+			}
+		}
+	}
+
+}
+
+
+
+/*for small tablet - exclusive - use with care*/
+
+@media only screen and (min-width : 40em){
+
+
+	// .section-image{
+	// 	background-position: center bottom;
+	// }
+
+}
+
+
+
+/*for tablet - inclusive*/
+
+@media only screen and (min-width : 60em) {
+}
+
+
+
+/*for destop - inclusive*/
+
+@media only screen and (min-width : 80em) {
+	.hero-image, .cv-hero-image{
+	    .content{
+	    	opacity:1;
+	    }
+
+	}
+	.cv-hero-image{
+	    background-position: bottom left;
+	}
+	.title{
+		padding-top:5%;
+	}
+	.sublink-section{
+		display:none;
+	}
+	.content{
+		min-height:70vh;
+	}
+	.section-image{
+		margin-bottom:5%;
+   		background-size: cover;
+	}
+
+
+}
